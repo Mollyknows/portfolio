@@ -4,15 +4,40 @@
     <link rel="stylesheet" href="mycss.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="/scripts/menu.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8dd7f794af.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Home Page</title>
   </head>
   <body>
-    <div class="navigation">
-      <a href="https://mollyrosecalhoun.com/index">Home</a>
-      <a href="https://mollyrosecalhoun.com/resume">Resume</a>
-      <a href="https://mollyrosecalhoun.com/projects">Projects</a>
-      <a href="https://mollyrosecalhoun.com/about">About Me</a>
-      <a href="https://mollyrosecalhoun.com/contact">Contact Me</a>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="navigation">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/about.html">About Me</a></li>
+          <li><a href="/contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="menu">
+      <span class="burger" onClick="openNav()"
+        ><i class="fa-solid fa-bars"></i
+      ></span>
+    </div>
+    <div class="heading"><h1>Contact Me</h1></div>
+    <div class="row">
+      <div class="content contact col-12">
+        <h1>Contact Me</h1>
+        <p><b>Email: </b>mollyrose.calhoun@gmail.com</p>
+        <p><b>Phone: </b>706-669-6650</p>
+      </div>
     </div>
   </body>
 </html>
