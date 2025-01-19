@@ -4,33 +4,84 @@
     <link rel="stylesheet" href="mycss.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="/scripts/menu.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8dd7f794af.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Home Page</title>
   </head>
   <body>
-    <div class="navigation">
-      <a href="https://mollyrosecalhoun.com/index">Home</a>
-      <a href="https://mollyrosecalhoun.com/resume">Resume</a>
-      <a href="https://mollyrosecalhoun.com/projects">Projects</a>
-      <a href="https://mollyrosecalhoun.com/about">About Me</a>
-      <a href="https://mollyrosecalhoun.com/contact">Contact Me</a>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="navigation">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/about.html">About Me</a></li>
+          <li><a href="/contact.html">Contact Me</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="geninfo">
-      <p><b>Name: </b></p>
-      <p><b>Title: </b></p>
-      <p><b>Pronouns: </b></p>
-      <p><b>Email: </b></p>
-      <p><b>Phone: </b></p>
+    <div class="menu">
+      <span class="burger" onClick="openNav()"
+        ><i class="fa-solid fa-bars"></i
+      ></span>
     </div>
-    <div class="education">
-      <div class="edu-container"></div>
-      <div class="edu-container"></div>
+    <div class="heading col-10"><h1>Welcome to my Portfolio Site</h1></div>
+    <div class="info content col-12">
+      <h2>General Info</h2>
+      <p><b>Name: </b>Molly Calhoun</p>
+      <p><b>Pronouns: </b>She/Her</p>
+      <p><b>Current Company: </b>Payroll Integrations</p>
+      <p><b>Title: </b>Software Engineering Intern</p>
+      <p><b>Email: </b>mcalho21@students.kennesaw.edu</p>
+      <p><b>Phone: </b>706-669-6650</p>
     </div>
-    <div class="skills"></div>
-    <div class="awards"></div>
+    <div class="education content col-12">
+      <h2>Education</h2>
+      <div class="edu-container">
+        <h3>Bachelor of Science in Technical Communication</h3>
+        <p><b>Awarding Institution: </b>Kennesaw State University</p>
+        <p><b>Concentration: </b>Technical Training</p>
+        <p><b>GPA: </b>3.7</p>
+        <p><b>Honors: </b>Magna Cum Laude</p>
+        <p><b>Year Awarded: </b>2014</p>
+        <br />
+      </div>
+      <div class="edu-container">
+        <h3>Certificate of Software Engineering</h3>
+        <p><b>Year Awarded: </b>3.7</p>
+      </div>
+      <br />
+      <div class="edu-container">
+        <h3>Master of Science in Software Engineering</h3>
+        <p><b>Attending Institution: </b>Kennesaw State University</p>
+        <p>[In Progress]</p>
+      </div>
+    </div>
+
     <div class="experience">
-      <div class="exp-container"></div>
-      <div class="exp-container"></div>
-      <div class="exp-container"></div>
+      <h2>Work Experience</h2>
+      <div class="exp-container">
+        <h3>
+          <a href="https://www.payrollintegrations.com/"
+            >Payroll Integrations</a
+          >
+        </h3>
+        <p><b>Role: </b>Software Engineering Intern</p>
+        <p>August 2024 to Present</p>
+      </div>
+      <div class="exp-container">
+        <h3><a href="https://www.reinhardt.edu/">Reinhardt University</a></h3>
+        <p><b>Role: </b>Records Administrator</p>
+        <p>February 2022 to April 2023</p>
+        <p><b>Role: </b>Senior Records Administrator</p>
+        <p>April 2023 to February 2024</p>
+      </div>
     </div>
   </body>
 </html>
