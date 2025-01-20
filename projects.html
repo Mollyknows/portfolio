@@ -1,22 +1,109 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <link rel="stylesheet" href="mycss.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="/scripts/menu.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8dd7f794af.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Projects</title>
   </head>
   <body>
-    <div class="navigation">
-      <a href="https://mollyrosecalhoun.com/index">Home</a>
-      <a href="https://mollyrosecalhoun.com/resume">Resume</a>
-      <a href="https://mollyrosecalhoun.com/projects">Projects</a>
-      <a href="https://mollyrosecalhoun.com/about">About Me</a>
-      <a href="https://mollyrosecalhoun.com/contact">Contact Me</a>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="navigation">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/about.html">About Me</a></li>
+          <li><a href="/contact.html">Contact Me</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="project">
-      <div class="proj-img"></div>
-      <div class="proj-about"></div>
+    <div class="menu">
+      <span class="burger" onClick="openNav()"
+        ><i class="fa-solid fa-bars"></i
+      ></span>
     </div>
+    <div class="heading col-10"><h1>My Projects</h1></div>
+    <div class="about content col-12">
+      <h2>About</h2>
+      <p>
+        On this page you can find examples of projects I've completed throughout
+        my personal, acadmeic, and professional careers. Please check back every
+        so often and catch up on what I've been up to!
+      </p>
+    </div>
+    <div class="project content col-12">
+      <h2>Dodge the Creeps!</h2>
+      <p class="subtitle">Beginner game development with Godot</p>
+      <h3>Details</h3>
+      <p>
+        This project was an assignment for my game development class in my
+        master's program. In it we were challenged with following
+        <a
+          href="https://docs.godotengine.org/en/stable/getting_started/first_2d_game/index.html"
+          >this tutorial</a
+        >
+        to develop our first 2D game. After we completed the tutorial we had to
+        make additional adjustments to the game like adding new timers, enemy
+        types, and collectible items. I found this to be a fascinating
+        introduction to game development, and felt like the project provided me
+        with a nice mixture of guidance and self teaching opportunities. by the
+        end of the project I felt like I'd had that "Aha!" moment where
+        everything started to click together. This was our first class project,
+        and I'm eagerly looking forward to building on the knowledge I gained
+        here when we make more games in the future.
+      </p>
+      <h3>What I learned</h3>
+      <ul>
+        <li>
+          The basics of GDscript, Godot's beginner dev programming language
+        </li>
+        <li>
+          How to properly build scenes and connect them together with Godot's
+          heirarchy system
+        </li>
+        <li>
+          Core functionalities of the Godot development environment (animation,
+          binding assets to nodes, etc.)
+        </li>
+      </ul>
+      <h3>Tools Used</h3>
+      <ul>
+        <li>
+          Godot Development Environment GUI (for creating and binding nodes, and
+          managing assets)
+        </li>
+        <li>GD Script (for coding game behavior)</li>
+        <li>Clip Studio Paint (for asset editing and creation)</li>
+      </ul>
+      <div class="row slidecontainer">
+        <a
+          href="javascript://"
+          onclick="slideMove(-1, 1)"
+          class="fas fa-angle-left"
+        ></a>
+        <div class="slideshow">
+          <img class="slides1" src="\images\creepdodge1.png" />
+          <img class="slides1" src="\images\creepdodge2.png" />
+          <img class="slides1" src="\images\creepdodge3.png" />
+        </div>
+        <a
+          href="javascript://"
+          onclick="slideMove(1, 1)"
+          class="fas fa-angle-right"
+        ></a>
+        <script src="/scripts/slides.js"></script>
+      </div>
+    </div>
+    <script src="/scripts/alternateColor.js"></script>
   </body>
 </html>

@@ -25,16 +25,17 @@
 }
 
 html {
-  height: 100%;
-  width: 100%;
+  padding-top: 1rem;
+  min-height: 100%;
+  min-width: 100%;
   background-image: linear-gradient(#00195d, #003784);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 body {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .headshot {
@@ -43,10 +44,10 @@ body {
 }
 
 .content {
-  background-color: bisque;
+  background-color: #ffe4c4;
   margin: 10px;
   margin-left: 0px;
-  border-radius: 3px;
+  border-radius: 1rem;
   height: 100%;
 }
 
@@ -85,7 +86,7 @@ body {
 
 .closebtn {
   float: right;
-  margin-right: 30px;
+  margin-right: 4rem;
   margin-top: 10px;
   font-size: 64px;
 }
@@ -116,6 +117,50 @@ body {
   padding-left: 1rem;
 }
 
+p {
+  margin-top: 2px;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+/* Slideshow-specific CSS */
+ul {
+  margin-left: 1rem;
+}
+
+.slideshow {
+  display: flex;
+  justify-content: center;
+}
+
+.row.slidecontainer {
+  margin-top: 1rem;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.slideshow img {
+  height: 24rem;
+  width: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+
+a.fas {
+  color: bisque;
+  background-color: #0088ff;
+  padding: 1rem;
+  border-radius: 3px;
+  transition: 0.3s;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+a.fas:hover {
+  background-color: #00195d;
+}
 /*Index-specific CSS*/
 
 .homelist {
@@ -123,17 +168,53 @@ body {
   margin-top: 1rem;
 }
 
-.homelist ul {
-  margin-left: 11px;
+.headshot {
+  max-width: 18rem;
+  max-height: 18rem;
 }
 
 /*About-specific CSS*/
-/*Contact-specific CSS*/
 
-.contact {
+.picrow {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
+
+.picrow img {
+  max-width: 30%;
+  max-height: 30%;
+}
+
+/*Contact-specific CSS*/
 /*Projects-specific CSS*/
+
+.project h2 {
+  margin-bottom: 0px;
+}
+
+.project h3 {
+  margin-top: 1rem;
+}
+
+.subtitle {
+  color: grey;
+  margin-bottom: 1rem;
+}
+
 /*Resume-specific CSS*/
+
+.exp-container {
+  border: 3px #0088ff solid;
+  border-radius: 3px;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.exp-container a {
+  color: #0088ff;
+}
+
 /*Responsive-design*/
 .col-1 {
   width: 8.33%;

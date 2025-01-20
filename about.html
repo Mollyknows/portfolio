@@ -1,22 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="mycss.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="/scripts/menu.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8dd7f794af.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>About Me</title>
   </head>
   <body>
-    <div class="navigation">
-      <a href="https://mollyrosecalhoun.com/index">Home</a>
-      <a href="https://mollyrosecalhoun.com/resume">Resume</a>
-      <a href="https://mollyrosecalhoun.com/projects">Projects</a>
-      <a href="https://mollyrosecalhoun.com/about">About Me</a>
-      <a href="https://mollyrosecalhoun.com/contact">Contact Me</a>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="navigation">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/about.html">About Me</a></li>
+          <li><a href="/contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="menu">
+      <span class="burger" onClick="openNav()"
+        ><i class="fa-solid fa-bars"></i
+      ></span>
+    </div>
+    <div class="heading col-10"><h1>About Me</h1></div>
+    <div class="row">
+      <div class="content col-12">
+        <h2>Hi there!</h2>
+        <p>
+          My name is Molly Calhoun, and I'm on a jounrey to learn more about
+          software engineering, computer science, and game development! I'm
+          currently in my second semester of the Kennesaw State University
+          Master's of Software Engineering (a bit of a mouthfull, I know!) and
+          I'm hoping to focus primarily on game development and web service
+          engineering.
+        </p>
+        <br />
+        <p>
+          Curently I'm an intern at a tech startup called Payroll Integrations,
+          where we're developing an API that helps employers automate the
+          process of connecting loan deductions and 401k contributions from
+          payroll. It's definitely been an eye-opening expereince, and I feel
+          like I've learned so much, even though I just started last year with
+          almost no coding knowledge.
+        </p>
+        <br />
+        <p>
+          When I'm not working or doing schoolwork, I enjoy reading, playing
+          video games, and making jewelry! I also have two cats, Spaceface and
+          Spot, who you can see below. If you're interested in reaching out with
+          a professional query, please contact me at the email listed on my
+          contact page. Thank you for visiting my site, and I hope you enjoy
+          your stay!
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="picrow">
+        <img alt="Spaceface" src="\images\spaceface.png" /><img
+          alt="My face"
+          src="\images\myface.png"
+        /><img alt="Spot" src="\images\spot.png" />
+      </div>
     </div>
   </body>
-  <div class="content"></div>
-  <div class="about-img"></div>
-  <div class="content"></div>
 </html>
